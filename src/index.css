@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Container:hover .icon {
+    color: rgb(14, 189, 14);
+}
