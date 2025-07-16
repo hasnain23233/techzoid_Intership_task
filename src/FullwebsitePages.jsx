@@ -1,9 +1,9 @@
 import React from 'react'
 import Home from './page/home'
+import About from './page/about';
 import {
     Routes,
     Route,
-    Link
 } from "react-router-dom";
 
 const FullwebsitePages = () => {
@@ -11,6 +11,7 @@ const FullwebsitePages = () => {
         <div>
             <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
             </Routes>
         </div>
     )

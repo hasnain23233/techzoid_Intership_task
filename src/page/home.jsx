@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from '../assets/home.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import Services from '../components/serviceList'
 import TestimonialSlider from '../components/slider'
 
@@ -12,13 +12,13 @@ const home = () => {
                 <div className="w-11/12 m-auto flex gap-2">
                     <div className="w-6/12 mt-8">
                         <p className='text-blue-400 p-2 rounded-full bg-blue-100 w-5/12 text-sm'>🚀 AI-Powered Business Solutions</p>
-                        <h1 className='text-6xl text-gray-700 py-2  font-bold'>Innovation in Every <br />  <span className="bg-gradient-to-r   from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                        <h1 className='text-6xl text-gray-700 py-2  font-bold'>Innovation in Every <br />  <span className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] bg-clip-text text-transparent">
                             Pixel & Process
                         </span></h1>
                         <p className='text-gray-700 text-xl leading-loose mt-2'>From custom AI chatbots to workflow automation, 3D modeling to data intelligence - we deliver cutting-edge solutions that drive growth and efficiency.</p>
                         <div className='flex mt-3 gap-3'>
-                            <button class="bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-semibold py-2 px-4 rounded-lg  hover:opacity-90 transition">Book Free Consultions</button>
-                            <button class="hover:bg-gradient-to-r from-cyan-400 to-blue-500 hover:text-white text-gray-700 font-semibold py-2 px-4 rounded-lg  hover:opacity-90 transition">Book Free Consultions</button>
+                            <button className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-2 px-4 rounded-lg  hover:opacity-90 transition">Book Free Consultions</button>
+                            <button className="hover:bg-gradient-to-r from-[#007BFF] to-[#00FFD1] hover:text-white text-gray-700 font-semibold py-2 px-4 rounded-lg  hover:opacity-90 transition">Book Free Consultions</button>
                         </div>
                         <div className='mt-5 flex gap-3'>
                             <p className='flex items-center gap-2'>
@@ -76,22 +76,22 @@ const home = () => {
                             <p className='text-gray-700 text-sm'>We analyze your business needs and identify automation opportunities</p>
                         </div>
                         <div className='m-auto w-3/12 mt-3'>
-                            <p class="bg-gradient-to-r m-auto  from-cyan-400 to-blue-500 text-white font-semibold w-16 h-16 rounded-full flex items-center justify-center shadow-md hover:opacity-90 transition">02</p>
+                            <p class=" m-auto bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold w-16 h-16 rounded-full flex items-center justify-center shadow-md hover:opacity-90 transition">02</p>
                             <h1 className='font-semibold'>Design</h1>
                             <p className='text-gray-700 text-sm'>Create detailed blueprints and prototypes for your solution</p>
                         </div>
                         <div className='m-auto w-3/12 mt-3'>
-                            <p class="bg-gradient-to-r m-auto from-cyan-400 to-blue-500 text-white font-semibold w-16 h-16 rounded-full flex items-center justify-center shadow-md hover:opacity-90 transition">03</p>
+                            <p class=" m-auto bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold w-16 h-16 rounded-full flex items-center justify-center shadow-md hover:opacity-90 transition">03</p>
                             <h1 className='font-semibold'>Development</h1>
                             <p className='text-gray-700 text-sm'>Build and integrate your custom AI and automation systems</p>
                         </div>
                         <div className='m-auto w-3/12 mt-3'>
-                            <p class="bg-gradient-to-r m-auto  from-cyan-400 to-blue-500 text-white font-semibold w-16 h-16 rounded-full flex items-center justify-center shadow-md hover:opacity-90 transition">04</p>
+                            <p class=" m-auto bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold w-16 h-16 rounded-full flex items-center justify-center shadow-md hover:opacity-90 transition">04</p>
                             <h1 className='font-semibold'>Deployment</h1>
                             <p className='text-gray-700 text-sm'>Launch your solution with comprehensive testing and optimization</p>
                         </div>
                         <div className='m-auto w-3/12 mt-3'>
-                            <p class="bg-gradient-to-r m-auto  from-cyan-400 to-blue-500 text-white font-semibold w-16 h-16 rounded-full flex items-center justify-center shadow-md hover:opacity-90 transition">05</p>
+                            <p class=" m-auto bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold w-16 h-16 rounded-full flex items-center justify-center shadow-md hover:opacity-90 transition">05</p>
                             <h1 className='font-semibold '>Support</h1>
                             <p className='text-gray-700 text-sm'>Ongoing maintenance, updates, and performance monitoring</p>
                         </div>

@@ -5,3 +5,7 @@
 .Container:hover .icon {
     color: rgb(14, 189, 14);
 }
+
+.ServiceContainer:hover .targetIcon {
+    transform: scale(1.1);
+}
