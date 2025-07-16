@@ -15,11 +15,11 @@ const navbar = () => {
                 <ul className='flex gap-9 w-5/12'>
                     <li className='hover:text-blue-500 text-gray-700'><Link to="/">Home</Link></li>
                     <li className='hover:text-blue-500 text-gray-700'><Link to="/about">About</Link></li>
-                    <li className='hover:text-blue-500 text-gray-700'><a href="#">Service</a></li>
-                    <li className='hover:text-blue-500 text-gray-700'><a href="#">Process</a></li>
-                    <li className='hover:text-blue-500 text-gray-700'><a href="#">Portfolio</a></li>
-                    <li className='hover:text-blue-500 text-gray-700'><a href="#">Blog</a></li>
-                    <li className='hover:text-blue-500 text-gray-700'><a href="#">Contact</a></li>
+                    <li className='hover:text-blue-500 text-gray-700'><Link to="/service">Service</Link></li>
+                    <li className='hover:text-blue-500 text-gray-700'><Link to="/process">Process</Link></li>
+                    <li className='hover:text-blue-500 text-gray-700'><Link to="/portfolio">Portfolio</Link></li>
+                    <li className='hover:text-blue-500 text-gray-700'><Link to="/blog">Blog</Link></li>
+                    <li className='hover:text-blue-500 text-gray-700'><Link to="/contact">Contact</Link></li>
                 </ul>
                 <div className='w-2/12 flex justify-end'>
                     <button class="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:opacity-90 transition">Get Started</button>
