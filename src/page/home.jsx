@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import Services from '../components/serviceList'
 import TestimonialSlider from '../components/slider'
+import Read from '../components/Read'
 
 const home = () => {
     return (
@@ -108,13 +109,7 @@ const home = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-gradient-to-r from-cyan-400 to-blue-500 text-center py-10'>
-                <h1 className='text-4xl text-white font-semibold'>Ready to Transform Your Business?</h1>
-                <p className='text-white text-lg leading-loose py-6'>
-                    Contact us today for a free consultation and discover how we can help you achieve your goals
-                </p>
-                <button class="hover:bg-gradient-to-r from-cyan-400 to-blue-500 hover:text-white text-gray-700 font-semibold py-2 px-4 rounded-lg bg-white  hover:opacity-90 transition">Book Free Consultions</button>
-            </div>
+            <Read />
         </div>
     )
 }

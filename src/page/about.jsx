@@ -1,6 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUserAlt, faFlag, faEye } from '@fortawesome/free-solid-svg-icons'
+import { faUserAlt, faFlag, faEye, faLightbulb, faUsers, faTrophy } from '@fortawesome/free-solid-svg-icons'
+import TeamSection from '../components/meetOurTeam'
+import Read from '../components/Read'
 
 const about = () => {
     return (
@@ -37,7 +39,49 @@ const about = () => {
                     </p>
                 </div>
             </div>
-            <div className='h-screen bg-[#f5f8fc] mt-12'></div>
+            <div className=' py-20 bg-[#f5f8fc] mt-12'>
+                <div className='text-center'>
+                    <h1 className='text-4xl mt-4 font-bold text-gray-800'>Our Core Services</h1>
+                    <p className='text-gray-700 leading-loose text-lg'>Comprehensive AI and creative technology solutions tailored to your business needs</p>
+                    <p className='bg-green-200 h-1 w-1/12 mt-4 rounded-md m-auto'></p>
+                </div>
+                <div className='mt-12'>
+                    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                        <div>
+                            <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 flex items-center justify-center">
+                                <FontAwesomeIcon icon={faLightbulb} className="text-white w-6 h-6" />
+                            </div>
+                            <h3 className="text-lg font-semibold mt-4">Innovation First</h3>
+                            <p className="text-gray-600 mt-2">
+                                We constantly explore new technologies and creative approaches to solve complex problems and stay ahead of the curve.
+                            </p>
+                        </div>
+                        <div>
+                            <div className="w-16 h-16 mx-auto rounded-full bg-green-600 flex items-center justify-center">
+                                <FontAwesomeIcon icon={faUsers} className="text-white w-6 h-6" />
+                            </div>
+                            <h3 className="text-lg font-semibold mt-4">Client Success</h3>
+                            <p className="text-gray-600 mt-2">
+                                Your success is our success. We're committed to delivering solutions that drive real, measurable results for your business.
+                            </p>
+                        </div>
+                        <div>
+                            <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-r from-purple-600 to-pink-500 flex items-center justify-center">
+                                <FontAwesomeIcon icon={faTrophy} className="text-white w-6 h-6" />
+                            </div>
+                            <h3 className="text-lg font-semibold mt-4">Excellence</h3>
+                            <p className="text-gray-600 mt-2">
+                                We maintain the highest standards in everything we do, from code quality to customer service and project delivery.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <TeamSection />
+            </div>
+            <Read />
         </div>
     )
 }
