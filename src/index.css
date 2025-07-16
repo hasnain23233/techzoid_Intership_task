@@ -9,3 +9,11 @@
 .ServiceContainer:hover .targetIcon {
     transform: scale(1.1);
 }
+
+.articalContainer img {
+    transition: all 200ms ease-in;
+}
+
+.articalContainer:hover img {
+    transform: scale(1.1);
+}

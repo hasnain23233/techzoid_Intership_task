@@ -6,8 +6,8 @@ import {
 
 const navbar = () => {
     return (
-        <header className='bg-white bg-white/30 fixed backdrop-blur-md z-10 w-full'>
-            <div className='flex w-11/12 m-auto justify-between px-4 py-2 gap-3 font-semibold items-center'>
+        <header className='bg-white border-b bg-white/30 fixed backdrop-blur-md z-10 w-full'>
+            <div className='flex w-11/12 m-auto justify-between px-4 py-2 gap-3 text-sm font-semibold items-center'>
                 <div className='flex items-center gap-2 w-2/12'>
                     <img src={Logo} alt="" className='w-3/12' />
                     <h1 className='font-bold text-lg'>Marvellcreativeco</h1>
