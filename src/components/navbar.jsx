@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../assets/logo.svg'
 import {
     Link
 } from 'react-router-dom'
+import { FaChevronDown } from 'react-icons/fa';
+import ServiceDrapDownMenu from './serviceDrapDownMenu';
 
 const navbar = () => {
+    const [isServiceOpen, setIsServiceOpen] = useState(false);
     return (
         <header className='bg-white border-b bg-white/30 fixed backdrop-blur-md z-10 w-full'>
             <div className='flex w-11/12 m-auto justify-between px-4 py-2 gap-3 text-sm font-semibold items-center'>
@@ -15,7 +18,22 @@ const navbar = () => {
                 <ul className='flex gap-9 w-5/12'>
                     <li className='hover:text-blue-500 text-gray-700'><Link to="/">Home</Link></li>
                     <li className='hover:text-blue-500 text-gray-700'><Link to="/about">About</Link></li>
-                    <li className='hover:text-blue-500 text-gray-700'><Link to="/service">Service</Link></li>
+
+                    <li
+                        className="text-gray-700 hover:text-blue-500 cursor-pointer"
+                        onMouseEnter={() => setIsServiceOpen(true)}
+                        onMouseLeave={() => setIsServiceOpen(false)}
+                    >
+                        <div className="flex items-center gap-1">
+                            <span>Service</span>
+                            <FaChevronDown
+                                className={`transition-transform duration-300 ${isServiceOpen ? 'rotate-180' : 'rotate-0'
+                                    }`}
+                            />
+                        </div>
+                        <ServiceDrapDownMenu isServiceOpen={isServiceOpen} />
+                    </li>
+
                     <li className='hover:text-blue-500 text-gray-700'><Link to="/process">Process</Link></li>
                     <li className='hover:text-blue-500 text-gray-700'><Link to="/portfolio">Portfolio</Link></li>
                     <li className='hover:text-blue-500 text-gray-700'><Link to="/blog">Blog</Link></li>
