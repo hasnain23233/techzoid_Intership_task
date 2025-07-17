@@ -1,6 +1,6 @@
 import { faArrowRight, faCalendar, faClock } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faStar, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
 const articles = [
     {
@@ -61,7 +61,7 @@ const articles = [
 
 export default function Project() {
     return (
-        <section className="py-12 bg-gray-50">
+        <section className="py-12 ">
             <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-4">
                 {articles.map((item, idx) => (
                     <div key={idx} className="bg-white rounded-lg overflow-hidden  articalContainer shadow-sm hover:shadow-md transition">
@@ -87,11 +87,13 @@ export default function Project() {
                                 <div className='flex items-center justify-between mt-3'>
                                     <p className='text-green-600 font-semibold'> <span className='text-yellow-300'>
                                         <FontAwesomeIcon icon={faStar} /></span> &nbsp;&nbsp; {item.readTime}</p>
-                                    <p>
-                                        <FontAwesomeIcon icon={faArrowRight} /></p>
+                                    <p className='cursor-pointer hover:bg-gray-100 p-2 rounded-md'>
+                                        <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                    </p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 ))}
             </div>

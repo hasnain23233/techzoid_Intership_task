@@ -23,6 +23,31 @@ const portfolio = () => {
                 </div>
             </div>
             <Project />
+            <div className="bg-gray-50 py-12">
+                <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+
+                    <div>
+                        <h2 className="text-5xl font-bold text-purple-600">500+</h2>
+                        <p className="text-gray-700 text-lg mt-2">Projects Completed</p>
+                    </div>
+
+                    <div>
+                        <h2 className="text-5xl font-bold text-blue-600">95%</h2>
+                        <p className="text-gray-700 text-lg mt-2">Client Satisfaction</p>
+                    </div>
+
+                    <div>
+                        <h2 className="text-5xl font-bold text-green-600">200+</h2>
+                        <p className="text-gray-700 text-lg mt-2">Happy Clients</p>
+                    </div>
+
+                    <div>
+                        <h2 className="text-5xl font-bold text-orange-600">5 Years</h2>
+                        <p className="text-gray-700 text-lg mt-2">Experience</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
     )
 }
