@@ -33,8 +33,8 @@ export default function TeamSection() {
     return (
         <section className="bg-white py-12">
             <div className="text-center mb-10">
-                <h2 className="text-4xl font-bold">Meet Our Team</h2>
-                <p className="text-gray-600 text-lg mt-2">Passionate experts dedicated to your success</p>
+                <h2 className="lg:text-3xl text-2xl font-bold">Meet Our Team</h2>
+                <p className="text-gray-600 lg:text-lg sm:text-md text-sm mt-2">Passionate experts dedicated to your success</p>
             </div>
 
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">

@@ -4,7 +4,7 @@ import Logo from '../assets/logo.svg'
 export default function Footer() {
     return (
         <footer className="bg-[#0c162d] text-white pt-10 pb-6 px-6 md:px-20">
-            <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 border-b border-gray-600 pb-8">
+            <div className="max-w-7xl mx-auto grid lg:grid-cols-4 gap-10 border-b border-gray-600 pb-8">
                 {/* Left Section */}
                 <div>
                     <div className="flex items-center space-x-2 mb-4">
