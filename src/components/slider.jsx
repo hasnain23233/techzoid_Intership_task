@@ -52,7 +52,7 @@ export default function TestimonialSlider() {
                 {testimonials.map((item, index) => (
                     <div
                         key={index}
-                        className="min-w-[calc(100%/3-1rem)] snap-start text-start bg-white p-6 rounded-xl border shadow-md"
+                        className="lg:min-w-[calc(100%/3-1rem)] sm:min-w-[calc(100%/2-1rem)] min-w-[calc(100%/1-1rem)] snap-start text-start bg-white p-6 rounded-xl border shadow-md"
                     >
                         <div className="flex text-yellow-400 mb-2">
                             {[...Array(5)].map((_, i) => (
