@@ -12,7 +12,7 @@ const portfolio = () => {
                             Case Studies
                         </span>
                     </h1>
-                    <p className='g:text-xl sm:text-md text-sm  lg:w-7/12 sm:w-9/12 w-11/12  leading-snug m-auto text-gray-500 py-3'>
+                    <p className='lg:text-xl sm:text-md text-sm  lg:w-7/12 sm:w-9/12 w-11/12  leading-snug m-auto text-gray-500 py-3'>
                         Discover how we've helped businesses transform with AI, automation, and creative technology solutions.
                     </p>
                     <div className='lg:w-2/12 sm:w-6/12 w-10/12 m-auto mt-3 flex justify-center'>
