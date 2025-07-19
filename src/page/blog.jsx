@@ -38,7 +38,7 @@ const blog = () => {
                         <h1 className='lg:text-3xl sm:text-2xl text-xl mt-2 font-semibold'>
                             The Future of AI in Business <br /> Automation
                         </h1>
-                        <p className='text-gray-600 mt-3 lg:text-xl text-sm'>
+                        <p className='text-gray-600 mt-3 text-sm'>
                             Discover how AI is revolutionizing business processes and what it means for your organization's future.
                         </p>
 
