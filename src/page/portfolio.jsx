@@ -6,16 +6,16 @@ const portfolio = () => {
         <div>
             <div className='h-screen bg-[#f5f8fc] flex items-center justify-center'>
                 <div className='w-full text-center'>
-                    <p className='text-blue-600 p-1 m-auto rounded-full bg-blue-100 w-2/12 gap-4 flex items-center flex-row  justify-center text-sm'> 🏆 Our Success Stories </p>
-                    <h1 className='text-6xl py-2 font-bold leading-tight'>
+                    <p className='text-blue-600 p-1 m-auto rounded-full bg-blue-100 lg:w-2/12 sm:w-8/12 w-11/12  gap-4 flex items-center flex-row  justify-center text-sm'> 🏆 Our Success Stories </p>
+                    <h1 className='xl:text-6xl lg:text-5xl sm:text-4xl text-3xl py-2 font-bold leading-tight'>
                         Portfolio &   <span className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] py-2 bg-clip-text text-transparent">
                             Case Studies
                         </span>
                     </h1>
-                    <p className='text-xl w-8/12 leading-snug m-auto text-gray-500 py-3'>
+                    <p className='g:text-xl sm:text-md text-sm  lg:w-7/12 sm:w-9/12 w-11/12  leading-snug m-auto text-gray-500 py-3'>
                         Discover how we've helped businesses transform with AI, automation, and creative technology solutions.
                     </p>
-                    <div className='w-2/12 m-auto mt-3 flex justify-center'>
+                    <div className='lg:w-2/12 sm:w-6/12 w-10/12 m-auto mt-3 flex justify-center'>
                         <button className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:opacity-90 transition">
                             Start Your Success Story
                         </button>
