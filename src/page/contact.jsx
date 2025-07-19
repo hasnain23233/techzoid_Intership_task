@@ -13,16 +13,16 @@ const contact = () => {
         <div>
             <div className='h-screen bg-[#f5f8fc] flex items-center justify-center'>
                 <div className='w-full text-center'>
-                    <p className='text-blue-600 p-1 m-auto rounded-full bg-blue-100 w-1/12 flex items-center flex-row gap-3 justify-center text-sm'> 💬 Get In Touch</p>
-                    <h1 className='text-6xl py-2 font-bold leading-tight'>
+                    <p className='text-blue-600 p-1 m-auto rounded-full bg-blue-100 lg:w-1/12 sm:w-7/12 w-10/12 flex items-center flex-row gap-3 justify-center text-sm'> 💬 Get In Touch</p>
+                    <h1 className='xl:text-6xl lg:text-5xl sm:text-4xl text-3xl py-2 font-bold leading-tight'>
                         Let's Build Something  <br />  <span className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] py-2 bg-clip-text text-transparent">
                             Amazing Together
                         </span>
                     </h1>
-                    <p className='text-xl w-7/12 leading-snug m-auto text-gray-500 py-3'>
+                    <p className='lg:text-xl sm:text-md text-sm  lg:w-7/12 sm:w-9/12 w-11/12  leading-snug m-auto text-gray-500 py-3'>
                         Ready to transform your business with AI and automation? We'd love to hear about your project and discuss how we can help you achieve your goals.
                     </p>
-                    <div className='w-2/12 m-auto mt-3 flex justify-center'>
+                    <div className='lg:w-2/12 sm:w-6/12 w-10/12 m-auto mt-3 flex justify-center'>
                         <button className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:opacity-90 transition">
                             Contact Us
                         </button>
@@ -30,9 +30,9 @@ const contact = () => {
                 </div>
             </div>
             <div className='flex gap-3 w-11/12 m-auto mt-12'>
-                <div className='w-7/12 px-7 py-3 shadow-2xl'>
-                    <h1 className='text-xl font-semibold'>Send Us a Message</h1>
-                    <p className='mt-2 text-gray-600'>Fill out the form and we’ll get back to you within 24 hours.</p>
+                <div className='lg:w-7/12 sm:w-9/12 w-11/12 px-7 py-3 m-auto shadow-2xl'>
+                    <h1 className='lg:text-xl  font-semibold'>Send Us a Message</h1>
+                    <p className='mt-2 lg:text-md text-sm text-gray-600'>Fill out the form and we’ll get back to you within 24 hours.</p>
                     <form action="" className='mt-5'>
                         <div className='grid sm:grid-cols-2 gap-4'>
                             <p>
@@ -83,7 +83,7 @@ const contact = () => {
                         </button>
                     </form>
                 </div>
-                <div className='w-5/12'>
+                <div className='w-5/12 lg:block hidden'>
                     <div className=" w-full p-4 space-y-6">
                         <div className="bg-white rounded-lg shadow-md p-4 flex items-center gap-4">
                             <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 text-white flex items-center justify-center rounded-full">
