@@ -5,8 +5,16 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import Services from '../components/serviceList'
 import TestimonialSlider from '../components/slider'
 import Read from '../components/Read'
+import { useNavigate } from 'react-router-dom'
 
 const home = () => {
+    const navigate = useNavigate()
+    const handleChnage = () => {
+        navigate('/contact')
+    }
+    const handlePortFolioChnage = () => {
+        navigate('/portfolio')
+    }
     return (
         <div>
             <div className='lg:h-screen overflow-hidden h-[800px]  flex items-center justify-between bg-[#f4f9ff]'>
@@ -18,8 +26,8 @@ const home = () => {
                         </span></h1>
                         <p className='text-gray-700 lg:text-xl sm:text-md text-sm leading-loose mt-2'>From custom AI chatbots to workflow automation, 3D modeling to data intelligence - we deliver cutting-edge solutions that drive growth and efficiency.</p>
                         <div className='flex lg:flex-row flex-col mt-3 gap-3'>
-                            <button className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-2 px-4 rounded-lg  hover:opacity-90 transition">Book Free Consultions</button>
-                            <button className="hover:bg-gradient-to-r from-[#007BFF] to-[#00FFD1] border hover:text-white text-gray-700 font-semibold py-2 px-4 rounded-lg  hover:opacity-90 transition">Book Free Consultions</button>
+                            <button onClick={handleChnage} className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] hover:bg-white hover:text-gray-700 text-white font-semibold py-2 px-4 rounded-lg  hover:opacity-90 transition">Book Free Consultions</button>
+                            <button onClick={handlePortFolioChnage} className="hover:bg-gradient-to-r from-[#007BFF] to-[#00FFD1] border hover:text-white text-gray-700 font-semibold py-2 px-4 rounded-lg  hover:opacity-90 transition">View Our Work</button>
                         </div>
                         <div className='mt-5 flex text-sm gap-3'>
                             <p className='flex items-center gap-2'>
