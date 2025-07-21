@@ -5,14 +5,14 @@ import { faCheckCircle, faMicrophoneAlt } from "@fortawesome/free-solid-svg-icon
 const Voice = () => {
     return (
         <div>
-            <div className='h-screen bg-gradient-to-r  to-[#007bff10] from-[#00ffd03b] flex items-center justify-center'>
+            <div className='h-screen bg-[#ff88001a]  flex items-center justify-center'>
                 <div className='w-full text-center'><br /><br /> <br />
-                    <p className=" bg-gradient-to-r m-auto from-[#007bfff7] to-[#00ffd0ec] text-white font-semibold w-20 h-20 rounded-xl flex items-center justify-center shadow-md hover:opacity-90 transition">
+                    <p className=" bg-gradient-to-r from-[#FF8A00] to-[#E52E71] m-auto   text-white font-semibold w-20 h-20 rounded-xl flex items-center justify-center shadow-md hover:opacity-90 transition">
                         <FontAwesomeIcon icon={faMicrophoneAlt} size='2x' />
                     </p> <br />
-                    <p className='text-blue-600 p-1 m-auto rounded-full bg-blue-100  xl:w-3/12 lg:w-4/12 sm:w-5/12 w-10/12  gap-4 flex items-center flex-row  justify-center text-sm'> 🎤 Voice & Speech AI</p>
+                    <p className='text-[#FF8A00] p-1 m-auto rounded-full bg-[#ff880014] xl:w-2/12 lg:w-4/12 font-semibold sm:w-5/12 w-10/12  gap-4 flex items-center flex-row  justify-center text-sm'> 🎤 Voice & Speech AI</p>
                     <h1 className='xl:text-6xl lg:text-5xl sm:text-4xl text-3xl py-2 font-bold leading-tight'>
-                        Advanced  <span className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] py-1 bg-clip-text text-transparent">
+                        Advanced  <span className="bg-gradient-to-r from-[#FF8A00] to-[#E52E71] py-1 bg-clip-text text-transparent">
                             Voice AI Solutions
                         </span>
                     </h1>
@@ -20,7 +20,7 @@ const Voice = () => {
                         Create immersive voice experiences with advanced speech recognition, synthesis, and AI-powered voice assistants.
                     </p>
                     <div className='xl:w-2/12 lg:w-3/12 sm:w-6/12 w-10/12  m-auto mt-3 flex justify-center'>
-                        <button className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
+                        <button className="bg-gradient-to-r from-[#FF8A00] to-[#E52E71] text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
                             Build Voice Solutions
                         </button>
                     </div>
@@ -28,11 +28,11 @@ const Voice = () => {
             </div>
             <div className='text-center w-11/12 m-auto'>
                 <h1 className='lg:text-4xl text-3xl text-gray-600 font-bold mt-12'>Voice AI Services</h1>
-                <div className="grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 text-start gap-4 mt-4 ">
+                <div className="grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 text-start gap-4 mt-14">
                     <div className='border py-5 cursor-pointer  px-6 hover:shadow-md rounded-lg'>
                         <div className='flex gap-3 items-center  '>
 
-                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#007bfff7] text-3xl" />
+                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#FF8A00] text-3xl" />
                             <div className=' w-10/12'>
                                 <h1 className='font-semibold text-xl leading-loose'>Voice Bot Development</h1>
                             </div>
@@ -46,7 +46,7 @@ const Voice = () => {
                     <div className='border py-5 cursor-pointer  px-6 hover:shadow-md rounded-lg'>
                         <div className='flex gap-3 items-center  '>
 
-                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#007bfff7] text-3xl" />
+                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#FF8A00] text-3xl" />
                             <div className=' w-10/12'>
                                 <h1 className='font-semibold text-xl leading-loose'>IVR Systems
                                 </h1>
@@ -61,7 +61,7 @@ const Voice = () => {
                     <div className='border py-5 cursor-pointer  px-6 hover:shadow-md rounded-lg'>
                         <div className='flex gap-3 items-center  '>
 
-                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#007bfff7] text-3xl" />
+                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#FF8A00] text-3xl" />
                             <div className=' w-10/12'>
                                 <h1 className='font-semibold text-xl leading-loose'>AI Avatar Creation</h1>
                             </div>
@@ -75,7 +75,7 @@ const Voice = () => {
                     <div className='border py-5 cursor-pointer  px-6 hover:shadow-md rounded-lg'>
                         <div className='flex gap-3 items-center  '>
 
-                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#007bfff7] text-3xl" />
+                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#FF8A00] text-3xl" />
                             <div className=' w-10/12'>
                                 <h1 className='font-semibold text-xl leading-loose'>Speech Recognition</h1>
                             </div>
@@ -89,7 +89,7 @@ const Voice = () => {
                     <div className='border py-5 cursor-pointer  px-6 hover:shadow-md rounded-lg'>
                         <div className='flex gap-3 items-center  '>
 
-                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#007bfff7] text-3xl" />
+                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#FF8A00] text-3xl" />
                             <div className=' w-10/12'>
                                 <h1 className='font-semibold text-xl leading-loose'>Voice Synthesis</h1>
                             </div>
@@ -103,7 +103,7 @@ const Voice = () => {
                     <div className='border py-5 cursor-pointer  px-6 hover:shadow-md rounded-lg'>
                         <div className='flex gap-3 items-center  '>
 
-                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#007bfff7] text-3xl" />
+                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#FF8A00] text-3xl" />
                             <div className=' w-10/12'>
                                 <h1 className='font-semibold text-xl leading-loose'>Voice Analytics</h1>
                             </div>

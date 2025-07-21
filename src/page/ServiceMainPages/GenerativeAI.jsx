@@ -5,14 +5,14 @@ import { faCheckCircle, faRobot } from "@fortawesome/free-solid-svg-icons";
 const GenerativeAI = () => {
     return (
         <div>
-            <div className='h-screen bg-gradient-to-r  to-[#007bff10] from-[#00ffd03b] flex items-center justify-center'>
+            <div className='h-screen bg-[#eefaff] flex items-center justify-center'>
                 <div className='w-full text-center'><br /><br /> <br />
-                    <p className=" bg-gradient-to-r m-auto from-[#007bfff7] to-[#00ffd0ec] text-white font-semibold w-20 h-20 rounded-xl flex items-center justify-center shadow-md hover:opacity-90 transition">
+                    <p className=" bg-gradient-to-r from-[#0055ff] to-[#0072FF] m-auto  text-white font-semibold w-20 h-20 rounded-xl flex items-center justify-center shadow-md hover:opacity-90 transition">
                         <FontAwesomeIcon icon={faRobot} size='2x' />
                     </p> <br />
                     <p className='text-blue-600 p-1 m-auto rounded-full bg-blue-100 xl:w-2/12 lg:w-3/12 sm:w-5/12 w-10/12  gap-4 flex items-center flex-row  justify-center text-sm'> 🤖 AI & Generative AI Solutions </p>
                     <h1 className='xl:text-6xl lg:text-5xl sm:text-4xl text-3xl py-2 font-bold leading-tight'>
-                        Custom AI &   <span className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] py-1 bg-clip-text text-transparent">
+                        Custom AI &   <span className="bg-gradient-to-r from-[#0055ff] to-[#0072FF] py-1 bg-clip-text text-transparent">
                             Chatbot <br /> Development
                         </span>
                     </h1>
@@ -20,7 +20,7 @@ const GenerativeAI = () => {
                         Streamline your operations with intelligent automation that connects your tools, processes, and data seamlessly.
                     </p>
                     <div className='lg:w-2/12 sm:w-6/12 w-10/12 m-auto mt-3 flex justify-center'>
-                        <button className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
+                        <button className="bg-gradient-to-r from-[#0055ff] to-[#0072FF] text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
                             Start Your AI Project
                         </button>
                     </div>
@@ -28,11 +28,11 @@ const GenerativeAI = () => {
             </div>
             <div className='text-center w-11/12 m-auto'>
                 <h1 className='lg:text-4xl text-3xl text-gray-600 font-bold mt-12'>Our AI Services</h1>
-                <div className="grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 text-start gap-4 mt-4 ">
+                <div className="grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 text-start gap-4 mt-14 ">
                     <div className='border py-5 cursor-pointer  px-6 hover:shadow-md rounded-lg'>
                         <div className='flex gap-3 items-center  '>
 
-                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#007bfff7] text-3xl" />
+                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#0055ff] text-3xl" />
                             <div className=' w-10/12'>
                                 <h1 className='font-semibold text-xl leading-loose'>Custom Chatbot Development</h1>
                             </div>
@@ -46,7 +46,7 @@ const GenerativeAI = () => {
                     <div className='border py-5 cursor-pointer  px-6 hover:shadow-md rounded-lg'>
                         <div className='flex gap-3 items-center  '>
 
-                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#007bfff7] text-3xl" />
+                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#0055ff] text-3xl" />
                             <div className=' w-10/12'>
                                 <h1 className='font-semibold text-xl leading-loose'>LLM Integration & Fine-tuning</h1>
                             </div>
@@ -60,7 +60,7 @@ const GenerativeAI = () => {
                     <div className='border py-5 cursor-pointer  px-6 hover:shadow-md rounded-lg'>
                         <div className='flex gap-3 items-center  '>
 
-                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#007bfff7] text-3xl" />
+                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#0055ff] text-3xl" />
                             <div className=' w-10/12'>
                                 <h1 className='font-semibold text-xl leading-loose'>Prompt Engineering</h1>
                             </div>
@@ -74,7 +74,7 @@ const GenerativeAI = () => {
                     <div className='border py-5 cursor-pointer  px-6 hover:shadow-md rounded-lg'>
                         <div className='flex gap-3 items-center  '>
 
-                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#007bfff7] text-3xl" />
+                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#0055ff] text-3xl" />
                             <div className=' w-10/12'>
                                 <h1 className='font-semibold text-xl leading-loose'>AI Content Generation</h1>
                             </div>
@@ -88,7 +88,7 @@ const GenerativeAI = () => {
                     <div className='border py-5 cursor-pointer  px-6 hover:shadow-md rounded-lg'>
                         <div className='flex gap-3 items-center  '>
 
-                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#007bfff7] text-3xl" />
+                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#0055ff] text-3xl" />
                             <div className=' w-10/12'>
                                 <h1 className='font-semibold text-xl leading-loose'>Conversational AI</h1>
                             </div>
@@ -102,7 +102,7 @@ const GenerativeAI = () => {
                     <div className='border py-5 cursor-pointer  px-6 hover:shadow-md rounded-lg'>
                         <div className='flex gap-3 items-center  '>
 
-                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#007bfff7] text-3xl" />
+                            <FontAwesomeIcon icon={faCheckCircle} className="text-[#0055ff] text-3xl" />
                             <div className=' w-10/12'>
                                 <h1 className='font-semibold text-xl leading-loose'>AI Training & Optimization</h1>
                             </div>
