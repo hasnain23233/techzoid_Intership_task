@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const serviceDrapDownMenu = ({ isServiceOpen }) => {
+const serviceDrapDownMenu = ({ isServiceOpen, handleCloseMenu }) => {
     return (
         <div className='w-full '>
             <div
@@ -10,49 +10,49 @@ const serviceDrapDownMenu = ({ isServiceOpen }) => {
             >
                 <ul className='grid lg:grid-cols-2 smgrid-cols-1 bg-white p-3'>
                     <li className="px-4 py-2 hover:bg-gray-100 rounded-md">
-                        <Link to="/service/ai-generative-ai">
+                        <Link onClick={handleCloseMenu} to="/service/ai-generative-ai">
                             <h1 className='text-gray-700 leading-loose font-bold'>AI & Generative AI</h1>
                             <p className='text-sm text-gray-400'>Chatbot , LLMs , Custome AI Apps</p>
                         </Link>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100 rounded-md">
-                        <Link to="/services/workflow-automation">
+                        <Link onClick={handleCloseMenu} to="/services/workflow-automation">
                             <h1 className='text-gray-700 leading-loose font-bold '>AI + Workflow Automation</h1>
                             <p className='text-sm text-gray-400'>Zapier , Make , n8n Integration</p>
                         </Link>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100 rounded-md">
-                        <Link to="/services/machine-learning">
+                        <Link onClick={handleCloseMenu} to="/services/machine-learning">
                             <h1 className='text-gray-700 leading-loose font-bold '>Machine Learning Data Intelligence</h1>
                             <p className='text-sm text-gray-400'>Predictive Analysis , Dashboards</p>
                         </Link>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100 rounded-md">
-                        <Link to="/services/voice-speech-ai">
+                        <Link onClick={handleCloseMenu} to="/services/voice-speech-ai">
                             <h1 className='text-gray-700 leading-loose font-bold '>Voice & Speech AI</h1>
                             <p className='text-sm text-gray-400'>Voicebots , IVR , AI Avatars</p>
                         </Link>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100 rounded-md">
-                        <Link to="/services/3d-modeling-ar-vr">
+                        <Link onClick={handleCloseMenu} to="/services/3d-modeling-ar-vr">
                             <h1 className='text-gray-700 leading-loose font-bold '>3D Modeling & AR/VR</h1>
                             <p className='text-sm text-gray-400'>Characters , Product Renders , NFTs</p>
                         </Link>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100 rounded-md">
-                        <Link to="/services/ui-ux-development">
+                        <Link onClick={handleCloseMenu} to="/services/ui-ux-development">
                             <h1 className='text-gray-700 leading-loose font-bold '>UI/UX & Frontend Development</h1>
                             <p className='text-sm text-gray-400'>Web/Mobile Design</p>
                         </Link>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100 rounded-md">
-                        <Link to="/services/python-automation">
+                        <Link onClick={handleCloseMenu} to="/services/python-automation">
                             <h1 className='text-gray-700 leading-loose font-bold '>Python & Custome Automation</h1>
                             <p className='text-sm text-gray-400'>Web Scraping , APIs , Beckend</p>
                         </Link>
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100 rounded-md">
-                        <Link to="/services/consulting-coaching">
+                        <Link onClick={handleCloseMenu} to="/services/consulting-coaching">
                             <h1 className='text-gray-700 leading-loose font-bold '>Consulting & Coaching</h1>
                             <p className='text-sm text-gray-400'>Business Strategy , Platform Setup</p>
                         </Link>

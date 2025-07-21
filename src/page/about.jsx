@@ -3,8 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserAlt, faFlag, faEye, faLightbulb, faUsers, faTrophy } from '@fortawesome/free-solid-svg-icons'
 import TeamSection from '../components/meetOurTeam'
 import Read from '../components/Read'
+import { useNavigate } from 'react-router-dom'
 
 const about = () => {
+    const navigate = useNavigate()
+    const handleChnage = () => {
+        navigate('/contact')
+    }
     return (
         <div>
             <div className='h-screen bg-[#f5f8fc] flex items-center justify-center'>
@@ -19,7 +24,7 @@ const about = () => {
                         We're a team of passionate technologists, designers, and innovators dedicated to transforming businesses through cutting-edge AI solutions and creative <br /> technology.
                     </p>
                     <div className='lg:w-2/12 sm:w-6/12 w-10/12 m-auto mt-3 flex justify-center'>
-                        <button className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:opacity-90 transition">
+                        <button onClick={handleChnage} className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:opacity-90 transition">
                             Work With Us
                         </button>
                     </div>

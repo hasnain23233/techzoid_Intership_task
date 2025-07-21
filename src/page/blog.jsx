@@ -3,8 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarAlt, faClock, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Image from '../assets/home.jpeg'
 import RecentArticles from '../components/recandArticale';
+import { useNavigate } from 'react-router-dom';
+
 
 const blog = () => {
+    const navigate = useNavigate()
+    const handleChnage = () => {
+        navigate('/contact')
+    }
     return (
         <div>
             <div className='h-screen bg-[#f5f8fc] flex items-center justify-center'>
@@ -21,7 +27,7 @@ const blog = () => {
 
                     </p>
                     <div className='lg:w-2/12 sm:w-6/12 w-10/12  m-auto mt-3 flex justify-center'>
-                        <button className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:opacity-90 transition">
+                        <button onClick={handleChnage} className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:opacity-90 transition">
                             Start Your Project
                         </button>
                     </div>

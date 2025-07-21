@@ -1,6 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Read = () => {
+    const navigate = useNavigate()
+    const handleChnage = () => {
+        navigate('/contact')
+    }
     return (
 
         <div className='bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-center py-10'>
@@ -8,7 +13,7 @@ const Read = () => {
             <p className='text-white sm:text-lg text-sm leading-loose py-6'>
                 Contact us today for a free consultation and discover how we can help you achieve your goals
             </p>
-            <button class="hover:bg-gradient-to-r from-[#007BFF] to-[#00FFD1] hover:text-white text-gray-700 font-semibold py-2 px-4 rounded-lg bg-white  hover:opacity-90 transition">Book Free Consultions</button>
+            <button onClick={handleChnage} class="hover:bg-gradient-to-r from-[#007BFF] to-[#00FFD1] hover:text-white text-gray-700 font-semibold py-2 px-4 rounded-lg bg-white  hover:opacity-90 transition">Book Free Consultions</button>
         </div>
     )
 }

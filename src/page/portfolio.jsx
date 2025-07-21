@@ -1,7 +1,12 @@
 import React from 'react'
 import Project from '../components/Projects'
+import { useNavigate } from 'react-router-dom'
 
 const portfolio = () => {
+    const navigate = useNavigate()
+    const handleChnage = () => {
+        navigate('/contact')
+    }
     return (
         <div>
             <div className='h-screen bg-[#f5f8fc] flex items-center justify-center'>
@@ -16,7 +21,7 @@ const portfolio = () => {
                         Discover how we've helped businesses transform with AI, automation, and creative technology solutions.
                     </p>
                     <div className='lg:w-2/12 sm:w-6/12 w-10/12 m-auto mt-3 flex justify-center'>
-                        <button className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:opacity-90 transition">
+                        <button onClick={handleChnage} className="bg-gradient-to-r from-[#007BFF] to-[#00FFD1] text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:opacity-90 transition">
                             Start Your Success Story
                         </button>
                     </div>

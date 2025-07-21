@@ -59,7 +59,7 @@ const Navbar = () => {
                             <span>Service</span>
                             <FaChevronDown className={`transition-transform duration-300 ${isServiceOpen ? 'rotate-180' : 'rotate-0'}`} />
                         </div>
-                        <ServiceDrapDownMenu isServiceOpen={isServiceOpen} />
+                        <ServiceDrapDownMenu isServiceOpen={isServiceOpen} handleCloseMenu={handleCloseMenu} />
                     </li>
 
                     <li onClick={handleCloseMenu} className='hover:text-blue-500 text-gray-700'><Link to="/process">Process</Link></li>
