@@ -5,13 +5,13 @@ const serviceDrapDownMenu = ({ isServiceOpen }) => {
     return (
         <div className='w-full '>
             <div
-                className={` absolute top-full left-1/4 bg-white shadow-lg rounded-md mt-2 w-6/12  overflow-hidden transition-all duration-300 ease-in-out ${isServiceOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                className={` absolute lg:top-16 lg:left-1/4 left-0 bg-white shadow-lg rounded-md mt-2 lg:w-6/12 w-full  overflow-auto transition-all duration-300 ease-in-out ${isServiceOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                     }`}
             >
-                <ul className='grid grid-cols-2 bg-white p-3'>
+                <ul className='grid lg:grid-cols-2 smgrid-cols-1 bg-white p-3'>
                     <li className="px-4 py-2 hover:bg-gray-100 rounded-md">
                         <Link to="/service/ai-generative-ai">
-                            <h1 className='text-gray-700 leading-loose font-bold '>AI & Generative AI</h1>
+                            <h1 className='text-gray-700 leading-loose font-bold'>AI & Generative AI</h1>
                             <p className='text-sm text-gray-400'>Chatbot , LLMs , Custome AI Apps</p>
                         </Link>
                     </li>
