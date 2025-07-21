@@ -1,8 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faPalette } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router-dom';
 
 const UX_FrontendDevelopmentService = () => {
+    const navigate = useNavigate()
+
+    const handleChnage = () => {
+        navigate('/contact')
+    }
     return (
         <div>
             <div className='h-screen bg-[#fef2f5] from-[#00ffd03b] flex items-center justify-center'>
@@ -20,7 +26,7 @@ const UX_FrontendDevelopmentService = () => {
                         Design beautiful, user-centric interfaces that engage users and drive conversions across web and mobile platforms.
                     </p>
                     <div className='xl:w-2/12 lg:w-3/12 sm:w-6/12 w-10/12  m-auto mt-3 flex justify-center'>
-                        <button className="bg-gradient-to-br from-pink-500 to-rose-400 text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
+                        <button onClick={handleChnage} className="bg-gradient-to-br from-pink-500 to-rose-400 text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
                             Design Your Interface
                         </button>
                     </div>

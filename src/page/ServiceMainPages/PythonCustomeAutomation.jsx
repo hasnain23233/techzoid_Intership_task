@@ -1,8 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faCode } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router-dom';
 
 const PythonCustomeAutomation = () => {
+    const navigate = useNavigate()
+
+    const handleChnage = () => {
+        navigate('/contact')
+    }
     return (
         <div>
             <div className='h-screen bg-[#facc1522]  flex items-center justify-center'>
@@ -20,7 +26,7 @@ const PythonCustomeAutomation = () => {
                         Automate repetitive tasks and build powerful backend systems with custom Python scripts and API integrations.
                     </p>
                     <div className='xl:w-2/12 lg:w-3/12 sm:w-6/12 w-10/12 m-auto mt-3 flex justify-center'>
-                        <button className="bg-gradient-to-br from-yellow-400 to-orange-500 text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
+                        <button onClick={handleChnage} className="bg-gradient-to-br from-yellow-400 to-orange-500 text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
                             Automate Everything
                         </button>
                     </div>

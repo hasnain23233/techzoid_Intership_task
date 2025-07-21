@@ -1,8 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faBrain } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router-dom';
 
 const MachineLerning = () => {
+    const navigate = useNavigate()
+
+    const handleChnage = () => {
+        navigate('/contact')
+    }
     return (
         <div>
             <div className='h-screen bg-[#f84d9418] flex items-center justify-center'>
@@ -20,7 +26,7 @@ const MachineLerning = () => {
                         Unlock insights from your data with predictive analytics, custom dashboards, and intelligent reporting systems.
                     </p>
                     <div className='xl:w-2/12 lg:w-3/12 sm:w-6/12 w-10/12  m-auto mt-3 flex justify-center'>
-                        <button className="bg-gradient-to-r from-[#A85FFF] to-[#F84D94] text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
+                        <button onClick={handleChnage} className="bg-gradient-to-r from-[#A85FFF] to-[#F84D94] text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
                             Unlock Your Data
                         </button>
                     </div>

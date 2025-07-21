@@ -1,8 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faRobot } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router-dom';
 
 const GenerativeAI = () => {
+    const navigate = useNavigate()
+
+    const handleChnage = () => {
+        navigate('/contact')
+    }
     return (
         <div>
             <div className='h-screen bg-[#eefaff] flex items-center justify-center'>
@@ -20,7 +26,7 @@ const GenerativeAI = () => {
                         Streamline your operations with intelligent automation that connects your tools, processes, and data seamlessly.
                     </p>
                     <div className='lg:w-2/12 sm:w-6/12 w-10/12 m-auto mt-3 flex justify-center'>
-                        <button className="bg-gradient-to-r from-[#0055ff] to-[#0072FF] text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
+                        <button onClick={handleChnage} className="bg-gradient-to-r from-[#0055ff] to-[#0072FF] text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
                             Start Your AI Project
                         </button>
                     </div>

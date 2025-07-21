@@ -1,8 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faRoute } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router-dom';
 
 const WorkflowAutomation = () => {
+    const navigate = useNavigate()
+
+    const handleChnage = () => {
+        navigate('/contact')
+    }
     return (
         <div>
             <div className='h-screen bg-green-50  flex items-center justify-center'>
@@ -20,7 +26,7 @@ const WorkflowAutomation = () => {
                         Transform your business with intelligent chatbots, LLM integration, and custom AI applications that understand and respond like humans.
                     </p>
                     <div className='xl:w-2/12 lg:w-3/12 sm:w-6/12 w-10/12 m-auto mt-3 flex justify-center'>
-                        <button className="bg-gradient-to-br from-green-600 to-teal-600 hover:bg-gradient-to-br hover:from-green-400 hover:to-teal-400 text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
+                        <button onClick={handleChnage} className="bg-gradient-to-br from-green-600 to-teal-600 hover:bg-gradient-to-br hover:from-green-400 hover:to-teal-400 text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
                             Automate Your Workflows
                         </button>
                     </div>

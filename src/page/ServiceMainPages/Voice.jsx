@@ -1,8 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faMicrophoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router-dom';
 
 const Voice = () => {
+    const navigate = useNavigate()
+
+    const handleChnage = () => {
+        navigate('/contact')
+    }
     return (
         <div>
             <div className='h-screen bg-[#ff88001a]  flex items-center justify-center'>
@@ -20,7 +26,7 @@ const Voice = () => {
                         Create immersive voice experiences with advanced speech recognition, synthesis, and AI-powered voice assistants.
                     </p>
                     <div className='xl:w-2/12 lg:w-3/12 sm:w-6/12 w-10/12  m-auto mt-3 flex justify-center'>
-                        <button className="bg-gradient-to-r from-[#FF8A00] to-[#E52E71] text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
+                        <button onClick={handleChnage} className="bg-gradient-to-r from-[#FF8A00] to-[#E52E71] text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition">
                             Build Voice Solutions
                         </button>
                     </div>
