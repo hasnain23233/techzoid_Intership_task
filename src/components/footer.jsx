@@ -1,5 +1,6 @@
 import { FaYoutube, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 import Logo from '../assets/logo.svg'
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -26,11 +27,11 @@ export default function Footer() {
                 <div>
                     <h3 className="font-semibold mb-4">Services</h3>
                     <ul className="text-gray-400 space-y-2 text-sm">
-                        <li>AI & Generative AI</li>
-                        <li>Workflow Automation</li>
-                        <li>Machine Learning</li>
-                        <li>3D Modeling & AR/VR</li>
-                        <li>UI/UX Development</li>
+                        <li><Link to={'/service/ai-generative-ai'} className="hover:text-white">AI & Generative AI</Link></li>
+                        <li><Link to={'/services/workflow-automation'} className="hover:text-white">Workflow Automation</Link></li>
+                        <li><Link to={'/services/machine-learning'} className="hover:text-white">Machine Learning</Link></li>
+                        <li><Link to={'/services/3d-modeling-ar-vr'} className="hover:text-white">3D Modeling & AR/VR</Link></li>
+                        <li><Link to={'/services/ui-ux-development'} className="hover:text-white">UI/UX Development</Link></li>
                     </ul>
                 </div>
 
@@ -38,11 +39,11 @@ export default function Footer() {
                 <div>
                     <h3 className="font-semibold mb-4">Company</h3>
                     <ul className="text-gray-400 space-y-2 text-sm">
-                        <li>About Us</li>
-                        <li>Portfolio</li>
-                        <li>Our Process</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
+                        <li><Link to="/about" className="hover:text-white">About Us</Link></li>
+                        <li><Link to={'/portfolio'} className="hover:text-white">Portfolio</Link></li>
+                        <li><Link to={'/process'} className="hover:text-white">Our Process</Link></li>
+                        <li><Link to={'/blog'} className="hover:text-white">Blog</Link></li>
+                        <li><Link to={'/contact'} className="hover:text-white">Contact</Link></li>
                     </ul>
                 </div>
 
