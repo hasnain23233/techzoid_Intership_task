@@ -59,9 +59,9 @@ export default function Footer() {
                         <input
                             type="email"
                             placeholder="Enter your email"
-                            className="rounded-l-md bg-[#11192e] text-sm text-white px-4 py-2 focus:outline-none border border-gray-500"
+                            className="rounded-l-md bg-[#11192e] text-sm text-white px-4 py-2 w-8/12 focus:outline-none border border-gray-500"
                         />
-                        <button className="rounded-r-md bg-gradient-to-r from-cyan-400 to-green-400 px-4 text-sm text-white font-semibold">
+                        <button className="rounded-r-md bg-gradient-to-r from-cyan-400 w-4/12 to-green-400 px-4 text-sm text-white font-semibold">
                             Subscribe
                         </button>
                     </div>
